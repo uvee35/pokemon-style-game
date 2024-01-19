@@ -11,7 +11,7 @@ c.fillStyle = 'white';
 c.fillRect(0, 0, canvas.width, canvas.height);
 // Import map
 const image = new Image();
-image.src = 'assets/Pellet Town.png';
+image.src = 'images/Pellet Town.png';
 
 // Wait for the map to load before drawing it on the canvas
 image.onload = () => {
@@ -42,3 +42,29 @@ playerImage.onload = () => {
         playerImage.height // Destination height
     );
 };
+// Add a keyboard event listener to handle player movement 
+window.addEventListener('keydown', (e) => {
+    switch (e.key) {
+        case 'W':
+            // Update player position to move left
+            console.log('pressed w key')
+            break;
+        case 'a':
+            // Update player position to move right
+            console.log('pressed a key')
+
+            break;
+        case 's':
+            // Update player position to move up
+            console.log('pressed s key')
+
+            break;
+        case 'd':
+            // Update player position to move down
+            console.log('pressed d key')
+
+            break;
+        // 
+    }
+});
+
